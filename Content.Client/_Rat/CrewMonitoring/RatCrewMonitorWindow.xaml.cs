@@ -30,6 +30,7 @@ public sealed partial class RatCrewMonitorWindow : FancyWindow
     private NetEntity? _trackedEntity;
     private bool _tryToScrollToListFocus;
     private Texture? _blipTexture;
+    private readonly Dictionary<NetEntity, byte> _entityMobStates = new();
 
     public RatCrewMonitorWindow()
     {
@@ -40,6 +41,13 @@ public sealed partial class RatCrewMonitorWindow : FancyWindow
 
         NavMap.TrackedEntitySelectedAction += SetTrackedEntityFromNavMap;
     }
+
+    private static Color GetMobColor(byte mobState) => mobState switch
+    {
+        4 => Color.Red,       // Dead
+        2 or 3 => Color.Orange, // Critical / SoftCritical
+        _ => Color.LimeGreen,   // Alive, Invalid
+    };
 
     public void Set(string stationName, EntityUid? mapUid)
     {
@@ -143,6 +151,9 @@ public sealed partial class RatCrewMonitorWindow : FancyWindow
             var coordinates = _entManager.GetCoordinates(sensor.Coordinates);
 
             NavMap.LocalizedNames.TryAdd(sensor.SuitSensorUid, sensor.Name + ", " + sensor.Job);
+
+            _entityMobStates[sensor.SuitSensorUid] = sensor.MobState;
+            NavMap.MobStates[sensor.SuitSensorUid] = sensor.MobState;
 
             var sensorButton = new RatCrewMonitorButton
             {
@@ -251,11 +262,12 @@ public sealed partial class RatCrewMonitorWindow : FancyWindow
 
             if (coordinates != null && NavMap.Visible && _blipTexture != null)
             {
+                var blipColor = GetMobColor(sensor.MobState);
                 NavMap.TrackedEntities.TryAdd(sensor.SuitSensorUid,
                     new NavMapBlip
                     (coordinates.Value,
                     _blipTexture,
-                    (_trackedEntity == null || sensor.SuitSensorUid == _trackedEntity) ? Color.LimeGreen : Color.LimeGreen * Color.DimGray,
+                    (_trackedEntity == null || sensor.SuitSensorUid == _trackedEntity) ? blipColor : blipColor * Color.DimGray,
                     sensor.SuitSensorUid == _trackedEntity));
 
                 NavMap.Focus = _trackedEntity;
@@ -313,10 +325,13 @@ public sealed partial class RatCrewMonitorWindow : FancyWindow
 
             if (NavMap.TrackedEntities.TryGetValue(castSensor.SuitSensorUid, out var data))
             {
+                var blipColor = _entityMobStates.TryGetValue(castSensor.SuitSensorUid, out var mobState)
+                    ? GetMobColor(mobState)
+                    : Color.LimeGreen;
                 data = new NavMapBlip
                     (data.Coordinates,
                     data.Texture,
-                    (currTrackedEntity == null || castSensor.SuitSensorUid == currTrackedEntity) ? Color.LimeGreen : Color.LimeGreen * Color.DimGray,
+                    (currTrackedEntity == null || castSensor.SuitSensorUid == currTrackedEntity) ? blipColor : blipColor * Color.DimGray,
                     castSensor.SuitSensorUid == currTrackedEntity);
 
                 NavMap.TrackedEntities[castSensor.SuitSensorUid] = data;
@@ -380,6 +395,8 @@ public sealed partial class RatCrewMonitorWindow : FancyWindow
         NavMap.TrackedCoordinates.Clear();
         NavMap.TrackedEntities.Clear();
         NavMap.LocalizedNames.Clear();
+        NavMap.MobStates.Clear();
+        _entityMobStates.Clear();
     }
 }
 

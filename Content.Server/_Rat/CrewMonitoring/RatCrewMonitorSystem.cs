@@ -150,7 +150,8 @@ public sealed class RatCrewMonitorSystem : EntitySystem
             {
                 IsAlive = isAlive,
                 Coordinates = netCoords,
-                Timestamp = _gameTiming.CurTime
+                Timestamp = _gameTiming.CurTime,
+                MobState = (byte)mobState.CurrentState
             };
 
             sensors.Add(status);

@@ -24,6 +24,7 @@ public sealed class RatCrewMonitorMapControl : BaseShuttleControl
     public NetEntity? Focus;
     public Dictionary<NetEntity, string> LocalizedNames = new();
     public Dictionary<NetEntity, NavMapBlip> TrackedEntities = new();
+    public Dictionary<NetEntity, byte> MobStates = new();
     public Dictionary<EntityCoordinates, (bool Visible, Color Color)> TrackedCoordinates = new();
 
     public EntityUid? MapUid;
@@ -36,6 +37,13 @@ public sealed class RatCrewMonitorMapControl : BaseShuttleControl
     private PanelContainer _trackedEntityPanel;
 
     protected override bool Draggable => true;
+
+    private static Color GetMobColor(byte mobState) => mobState switch
+    {
+        4 => Color.Red,       // Dead
+        2 or 3 => Color.Orange, // Critical / SoftCritical
+        _ => Color.LimeGreen,   // Alive, Invalid
+    };
 
     public RatCrewMonitorMapControl() : base(256f, 8192f, 4096f)
     {
@@ -354,6 +362,12 @@ public sealed class RatCrewMonitorMapControl : BaseShuttleControl
 
             _trackedEntityLabel.Text = message;
             _trackedEntityPanel.Visible = true;
+            
+            var mobColor = MobStates.TryGetValue(netEntity, out var mobState)
+                ? GetMobColor(mobState)
+                : Color.White;
+            _trackedEntityLabel.Modulate = mobColor;
+
             return;
         }
 
