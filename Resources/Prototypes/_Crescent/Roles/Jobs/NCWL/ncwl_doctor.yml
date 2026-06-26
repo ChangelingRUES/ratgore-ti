@@ -87,6 +87,7 @@
     outerClothing: ClothingOuterArmorNCWLMedi
     belt: ClothingBeltMedicalFilled
     back: ClothingBackpackNCWL
+    pocket1: HandheldCrewMonitorNCWL # Ratgore-tweak
     gloves: ClothingHandsGlovesNitrile
     head: ClothingHeadHatNCWLCapsoftMedical
     eyes: ClothingEyesHudMedical

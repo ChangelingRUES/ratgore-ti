@@ -69,6 +69,7 @@
     eyes: ClothingEyesHudMedical
     head: ClothingHeadHatImperialSurgeon
     back: ClothingBackpackDSM
+    pocket1: HandheldCrewMonitorDSM # Ratgore-tweak
     gloves: ClothingHandsGlovesNitrile
     belt: ClothingBeltMedicalFilled
     shoes: ClothingShoesBootsImperialLaceup

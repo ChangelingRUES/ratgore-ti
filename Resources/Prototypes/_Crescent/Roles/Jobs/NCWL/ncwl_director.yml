@@ -109,3 +109,8 @@
     eyes: ClothingEyesHudMedical
     ears: ClothingHeadsetNCWLCommand
     pocket2: RatRubberStampNCWLMedical
+# Ratgore-edit start
+  storage:
+    back:
+      - HandheldCrewMonitorNCWL
+# Ratgore-edit end

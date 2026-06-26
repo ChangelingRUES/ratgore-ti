@@ -78,6 +78,7 @@
     shoes: ClothingShoesBootsJack
     id: MedtechPDA
     pocket1: TradePassport
+    pocket2: HandheldCrewMonitorSHI # Ratgore-tweak
     eyes: ClothingEyesGlassesChemical
     ears: ClothingHeadsetShinohara
     gloves: ClothingHandsGlovesLatex
