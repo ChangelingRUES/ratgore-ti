@@ -122,8 +122,8 @@
   - OperativeNCSP
   - IntelligenceOfficerNCSP
   - CyberdawnTechNCSP
-  #- ForemanNCSP
-  #- ShipbreakerNCSP
+  - ForemanNCSP
+  - ShipbreakerNCSP
   editorHidden: false
 
 - type: department

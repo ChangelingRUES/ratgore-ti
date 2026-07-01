@@ -35,6 +35,12 @@
         posY: 1000
         IFFColor: White
         IFFFaction: SHI
+      Dochenskaya:
+        gameMapID: Dochenskaya
+        posX: 6000
+        posY: 1000
+        IFFColor: IndianRed
+        IFFFaction: TFSC
       Jackal:
         gameMapID: Jackal
         posX: 8000
