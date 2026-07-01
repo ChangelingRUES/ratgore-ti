@@ -129299,7 +129299,7 @@ entities:
       containers:
         board: !type:Container
           ents: []
-- proto: ComputerCrewMonitoring
+- proto: ComputerCrewMonitorDSM
   entities:
   - uid: 8896
     components:
@@ -129437,7 +129437,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -3.5,35.5
       parent: 1
-- proto: ComputerTabletopCrewMonitoring
+- proto: ComputerTabletopCrewMonitorDSM
   entities:
   - uid: 8914
     components:

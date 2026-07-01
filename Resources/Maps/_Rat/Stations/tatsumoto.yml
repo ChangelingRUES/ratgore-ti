@@ -45095,7 +45095,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -0.5,29.5
       parent: 1
-- proto: ComputerTabletopCrewMonitoring
+- proto: ComputerTabletopCrewMonitorSHI
   entities:
   - uid: 4141
     components:
