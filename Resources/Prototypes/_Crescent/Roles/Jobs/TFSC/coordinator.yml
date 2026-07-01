@@ -58,6 +58,8 @@
       - type: CPRTraining
       - type: SurgerySpeedModifier
         speedModifier: 2.5
+      - type: HealingSpeedModifier # Ratgore-tweak
+        speedModifier: 2.5 # Ratgore-tweak
       - type: LanguageAdder
         addSpoken:
           - Freespeak
@@ -96,3 +98,4 @@
       - MagazinePistol
       - CombatKnife
       - RatRubberStampTFSCInterdyne
+      - HandheldCrewMonitorTFSC # Ratgore-tweak

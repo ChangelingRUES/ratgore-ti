@@ -26,7 +26,7 @@
   - MarshalCMM
   - Spacer
   - GliessianDockhand
-  editorHidden: true
+  editorHidden: false
 
 - type: department
   id: Command
@@ -115,7 +115,7 @@
   - RingleaderNCSP
   - LieutenantNCSP
   - InfanteerNCSP
-  - TechnicianNCSP
+  #- TechnicianNCSP new conception comments out these jobs
   - CoordinatorNCSP
   - RipperdocNCSP
   - TraumasecNCSP
@@ -172,7 +172,7 @@
   roles:
   - ExecutiveSHI
   - BoardSHI
-  #- HighsecSHI
+  - HighsecSHI
   - CorpsecSHI
   - EmployeeSHI
   - MedtechSHI
@@ -210,7 +210,7 @@
   - BeltrunnerTAP
   - DraugrTAP
   - ServileTAP
-  editorHidden: true
+  editorHidden: false
 
 - type: department
   id: ATH
