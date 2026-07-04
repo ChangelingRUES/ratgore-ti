@@ -528,7 +528,7 @@
 - type: entity
   id: RatComputerShipyardCrescentMajors
   parent: RatComputerShipyardCrescent
-  name: civillian shipyard
+  name: civilian shipyard
   description: Used to purchase and sell shuttles
   suffix: Crescent, Majors
   components:
