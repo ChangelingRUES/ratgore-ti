@@ -69,7 +69,7 @@
     belt: ClothingBeltUtilityEngineering
     pocket1: WeaponPistolViperWood
     gloves: ClothingHandsGlovesFingerless
-    pocket2: AccessElevatorSAW
+    # pocket2: AccessElevatorSAW
     back: ClothingBackpackNCSPFilledInfanteer
   storage:
     back:

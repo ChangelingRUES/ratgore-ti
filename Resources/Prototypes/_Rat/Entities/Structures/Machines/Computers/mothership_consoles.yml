@@ -524,3 +524,24 @@
     iffColor: "#C677A5"
     shuttles:
     - Peasant
+
+- type: entity
+  id: RatComputerShipyardCrescentMajors
+  parent: RatComputerShipyardCrescent
+  name: civillian shipyard
+  description: Used to purchase and sell shuttles
+  suffix: Crescent, Majors
+  components:
+  - type: ShipyardListing #removes mining-capable shuttles
+    shuttles:
+    - Exhumer
+    - Gorn
+    - Homesteader
+    - Kite
+    - Mercury
+    - Paracelsus
+    - Qian
+    - Pear
+    - Birdie
+    - Termite
+    - Manatee

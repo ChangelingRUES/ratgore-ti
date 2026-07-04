@@ -287036,7 +287036,7 @@ entities:
     - type: Transform
       pos: -14.5,13.5
       parent: 1
-- proto: RatComputerShipyardCrescent
+- proto: RatComputerShipyardCrescentMajors
   entities:
   - uid: 7541
     components:

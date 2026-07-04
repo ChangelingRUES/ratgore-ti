@@ -1,20 +1,20 @@
 # Patriarch
 - type: rank
   id: RatRankTFSCPatriarchSenior
-  name: Секториальный патриарх
-  prefix: Сект. Пат.
+  name: Старший оффицер
+  prefix: Ст. Офцр.
   paygrade: CD-P3
 
 - type: rank
   id: RatRankTFSCPatriarchMiddle
-  name: Патриарх
-  prefix: Патриарх
+  name: Оффицер
+  prefix: Оффицер
   paygrade: CD-P2
 
 - type: rank
   id: RatRankTFSCPatriarchJunior
-  name: Младший патриарх
-  prefix: Мл. Пат.
+  name: Младший оффицер
+  prefix: Мл. Офцр.
   paygrade: CD-P1
 
 # Operative
