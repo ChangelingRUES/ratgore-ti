@@ -23,21 +23,21 @@ job-name-ncwl-newbie = Рабочий
 
 # syndicate
 
-job-name-ringleader = Организатор
-job-name-lieutenant = Командир
-job-name-infanteer = Солдат
-job-name-technician = Новобранец Горлекс
-job-name-coordinator = Медицинский координатор
-job-name-ripperdoc = Боевой медик
-job-name-traumasec = Медицинский охранник
-job-name-operative = Диверсант
-job-name-cyberdawntech = Исследователь
-job-name-intelligenceofficer = Разведчик
-job-name-shipbreaker = Техник
-job-name-foreman = Надзиратель
-ghost-role-information-syndicate-cyborg-assault-name-c = CS 5401 Сигоу атакующий киборг
-ghost-role-information-syndicate-cyborg-Medical-name = CS 4201 Яо Ванг боевой медицинский киборг
-ghost-role-information-syndicate-cyborg-saboteur-name-c = CS 3201 Сунь Укун боевой диверсионный киборг
+job-name-ringleader = Командир
+job-name-lieutenant = Лейтенант
+job-name-infanteer = Оперативник
+job-name-technician = Кадет
+job-name-coordinator = Главный врач
+job-name-ripperdoc = Хирург
+job-name-traumasec = Оперативный санитар
+job-name-operative = Разведчик
+job-name-cyberdawntech = Учёный
+job-name-intelligenceofficer = Офицер разведки
+job-name-shipbreaker = Инженер
+job-name-foreman = Бригадир
+ghost-role-information-syndicate-cyborg-assault-name-c = TS 5401 «Quick Tread» атакующий киборг
+ghost-role-information-syndicate-cyborg-Medical-name = TS 4201 «Snap Trick» боевой медицинский киборг
+ghost-role-information-syndicate-cyborg-saboteur-name-c = TS 3201 «Red Curve» боевой диверсионный киборг
 
 # empire
 

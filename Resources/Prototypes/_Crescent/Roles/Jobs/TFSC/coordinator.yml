@@ -24,7 +24,7 @@
   weight: 8
   startingGear: CoordinatorGear
   alwaysUseSpawner: true
-  whitelisted: true # Rat
+  # whitelisted: true # Rat - new conception
   requireAdminNotify: true
   icon: "JobIconSyndieCoordinator"
   chatNameColor: "#e2e2e2"
@@ -87,7 +87,7 @@
     head: ClothingHeadHatSyndicateInterdyneBeret
     id: CoordinatorPDA
     ears: ClothingHeadsetNCSPInterdyneCommand
-    pocket1: AccessElevatorIPM
+    #pocket1: AccessElevatorIPM
     pocket2: WeaponPistolHKUSP
     back: ClothingBackpackNCSP
   storage:

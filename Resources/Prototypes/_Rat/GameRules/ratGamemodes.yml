@@ -39,8 +39,8 @@
         IFFFaction: SHI
       Jackal:
         gameMapID: Jackal
-        posX: 8000
-        posY: -2000
+        posX: -8000
+        posY: 2000
         IFFColor: IndianRed
         IFFFaction: TFSC
       GliessSanto:

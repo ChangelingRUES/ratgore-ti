@@ -16,7 +16,7 @@
   weight: 5
   startingGear: IntelligenceOfficerGear
   alwaysUseSpawner: true
-  whitelisted: true # Rat
+  # whitelisted: true # Rat - new conception
   requireAdminNotify: true
   icon: "JobIconSyndieIntelligenceOfficer"
   chatNameColor: "#839cd7"
@@ -77,11 +77,12 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitSyndicateSuitCyberdawn
     shoes: ClothingShoesBootsCombat
+    mask: ClothingMaskGasVoiceChameleon # Rat
     head: ClothingHeadHatPatriarch
     id: IntelligenceOfficerPDA
     back: ClothingBackpackNCSPFilledInfanteer
     gloves: ClothingHandsGlovesFingerless
     outerClothing: ClothingOuterArmorCyberdawnPatriarch
     ears: ClothingHeadsetNCSPCyberdawnCommand
-    pocket1: AccessElevatorCD
+    pocket1: AgentIDCard # Rat
     pocket2: RatRubberStampTFSCCyberDawn
